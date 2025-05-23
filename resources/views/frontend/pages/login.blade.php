@@ -51,14 +51,9 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-group login-btn">
+                                    <div class="form-group login-btn text-center">
                                         <button class="btn" type="submit">Login</button>
                                         <a href="{{route('register.form')}}" class="btn">Register</a>
-                                        OR
-                                        <a href="{{route('login.redirect','facebook')}}" class="btn btn-facebook"><i class="ti-facebook"></i></a>
-                                        <a href="{{route('login.redirect','github')}}" class="btn btn-github"><i class="ti-github"></i></a>
-                                        <a href="{{route('login.redirect','google')}}" class="btn btn-google"><i class="ti-google"></i></a>
-
                                     </div>
                                     <div class="checkbox">
                                         <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Remember me</label>
@@ -79,30 +74,37 @@
     </section>
     <!--/ End Login -->
 @endsection
+
 @push('styles')
 <style>
-    .shop.login .form .btn{
-        margin-right:0;
+    .shop.login .form .btn {
+        margin-right: 0;
     }
-    .btn-facebook{
-        background:#39579A;
+    .btn-facebook {
+        background: #39579A;
     }
-    .btn-facebook:hover{
-        background:#073088 !important;
+    .btn-facebook:hover {
+        background: #073088 !important;
     }
-    .btn-github{
-        background:#444444;
-        color:white;
+    .btn-github {
+        background: #444444;
+        color: white;
     }
-    .btn-github:hover{
-        background:black !important;
+    .btn-github:hover {
+        background: black !important;
     }
-    .btn-google{
-        background:#ea4335;
-        color:white;
+    .btn-google {
+        background: #ea4335;
+        color: white;
     }
-    .btn-google:hover{
-        background:rgb(243, 26, 26) !important;
+    .btn-google:hover {
+        background: rgb(243, 26, 26) !important;
+    }
+    .login-btn {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
     }
 </style>
 @endpush

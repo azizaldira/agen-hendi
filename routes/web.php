@@ -101,13 +101,6 @@
 // Order Track
     Route::get('/product/track', [OrderController::class, 'orderTrack'])->name('order.track');
     Route::post('product/track/order', [OrderController::class, 'productTrackOrder'])->name('product.track.order');
-// Blog
-    Route::get('/blog', [FrontendController::class, 'blog'])->name('blog');
-    Route::get('/blog-detail/{slug}', [FrontendController::class, 'blogDetail'])->name('blog.detail');
-    Route::get('/blog/search', [FrontendController::class, 'blogSearch'])->name('blog.search');
-    Route::post('/blog/filter', [FrontendController::class, 'blogFilter'])->name('blog.filter');
-    Route::get('blog-cat/{slug}', [FrontendController::class, 'blogByCategory'])->name('blog.category');
-    Route::get('blog-tag/{slug}', [FrontendController::class, 'blogByTag'])->name('blog.tag');
 
 // NewsLetter
     Route::post('/subscribe', [FrontendController::class, 'subscribe'])->name('subscribe');

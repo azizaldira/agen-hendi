@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','Agen Hendi || About Us')
+@section('title','About Us')
 
 @section('main-content')
 

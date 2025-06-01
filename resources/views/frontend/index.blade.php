@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Agen Hendi || HOME PAGE')
+@section('title','HOME PAGE')
 @section('main-content')
 <!-- Slider Area -->
 @if(count($banners)>0)

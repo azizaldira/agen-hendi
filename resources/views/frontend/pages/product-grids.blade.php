@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','Agen Hendi || PRODUCT PAGE')
+@section('title','PRODUCT PAGE')
 
 @section('main-content')
 	<!-- Breadcrumbs -->
